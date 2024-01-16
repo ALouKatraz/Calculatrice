@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=un.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Création du conteneur de la calculatrice -->
+    <div id="calculatrice">
+        <!-- Création de l'afficheur -->
+        <div id="affichage">
+            <!-- Insertion d'un input permettant 
+                d'afficher le calcul et la réponse 
+                Utilisation d'une mode de lecture seule-->
+            <input class="afficheur" type="text" readonly>
+        </div>
+        <!-- Création de la base de la calculatrice -->
+        <div id="chiffres">
+            <!-- Insertion des boutons composant la calculatrice  -->
+            <input class="button un" type="button" value="1">
+            <input class="button un" type="button" value="2">
+            <input class="button un" type="button" value="3">
+            <input class="button un" type="button" value="+" onclick="appendInput('+')">
+            <input class="button deux" type="button" value="4">
+            <input class="button deux" type="button" value="5">
+            <input class="button deux" type="button" value="6">
+            <input class="button deux" type="button" value="-" onclick="appendInput('-')">
+            <input class="button trois" type="button" value="7">
+            <input class="button trois" type="button" value="8">
+            <input class="button trois" type="button" value="9">
+            <input class="button trois" type="button" value="*" onclick="appendInput('*')">
+            <input class="button zero" type="button" value="0">
+            <input class="button quatre" type="button" value="C" onclick="clearDisplay()">
+            <input class="button quatre" type="button" value="/" onclick="appendInput('/')">
+        </div>
+    </div>
+    <!-- Insertion du script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
